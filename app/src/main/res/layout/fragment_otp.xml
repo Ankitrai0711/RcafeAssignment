@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundimg"
+        tools:context=".Otp">
+
+        <TextView
+            android:id="@+id/verifyMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/circe_bold"
+            android:text="@string/verify_mobile_number"
+            android:textColor="@color/beanCoffe"
+            android:layout_marginBottom="52dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/pinContainer"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <TextView
+            android:id="@+id/sentTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp_was_sent_to"
+            app:layout_constraintTop_toBottomOf="@+id/verifyMobileNo"
+            android:textColor="@color/otpSent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/otpOnMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/otpSent"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@+id/sentTo"
+            app:layout_constraintTop_toBottomOf="@id/verifyMobileNo" />
+
+        <ImageView
+            android:id="@+id/backOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="17dp"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/group_306080"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="32dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pinContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="205dp"
+            android:background="@drawable/layoutloginradius"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/sentOtpOnNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/circe"
+                android:text="@string/otpSent"
+                android:textColor="@color/sentTo"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sentPaasOnNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sentOtpOnNo" />
+
+            <TextView
+                android:id="@+id/enterPasswordBelow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enterPinBelow"
+                android:textColor="@color/sentTo"
+                app:layout_constraintStart_toEndOf="@id/sentPaasOnNo"
+                app:layout_constraintTop_toBottomOf="@id/sentOtpOnNo" />
+
+            <EditText
+                android:id="@+id/otpOne"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pinedittex"
+                android:layout_marginStart="26dp"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/otpTwo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sentOtpOnNo" />
+
+            <EditText
+                android:id="@+id/otpTwo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pinedittex"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/otpThree"
+                app:layout_constraintStart_toEndOf="@+id/otpOne"
+                app:layout_constraintTop_toBottomOf="@+id/sentOtpOnNo" />
+
+            <EditText
+                android:id="@+id/otpThree"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pinedittex"
+                android:inputType="number"
+                android:layout_marginStart="7dp"
+
+                android:maxLength="1"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/otpFour"
+                app:layout_constraintStart_toEndOf="@+id/otpTwo"
+                app:layout_constraintTop_toBottomOf="@+id/sentOtpOnNo" />
+
+            <EditText
+                android:id="@+id/otpFour"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pinedittex"
+                android:inputType="number"
+                android:layout_marginStart="7dp"
+
+                android:maxLength="1"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/otpFive"
+                app:layout_constraintStart_toEndOf="@+id/otpThree"
+                app:layout_constraintTop_toBottomOf="@+id/sentOtpOnNo" />
+
+            <EditText
+                android:id="@+id/otpFive"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pinedittex"
+                android:inputType="number"
+                android:layout_marginStart="7dp"
+
+                android:maxLength="1"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@+id/otpSix"
+                app:layout_constraintStart_toEndOf="@+id/otpFour"
+                app:layout_constraintTop_toBottomOf="@+id/sentOtpOnNo" />
+
+            <EditText
+                android:id="@+id/otpSix"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pinedittex"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/otpFive"
+                app:layout_constraintTop_toBottomOf="@+id/sentOtpOnNo" />
+
+            <TextView
+                android:id="@+id/showErrorInOtp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/red"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="@id/otpSix"
+                app:layout_constraintStart_toStartOf="@id/otpOne"
+                app:layout_constraintTop_toBottomOf="@+id/otpThree" />
+
+            <Button
+                android:id="@+id/otpButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/circe"
+                android:text="@string/cont"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/passwordTakeTime" />
+
+            <TextView
+                android:id="@+id/passwordTakeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="66dp"
+                android:text="@string/passwordTakeTime"
+                android:textColor="@color/takeTime"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/otpThree" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
