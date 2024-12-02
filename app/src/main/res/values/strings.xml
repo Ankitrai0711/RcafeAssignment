@@ -7,12 +7,27 @@
     <string name="please_log_in_to_continue">Please Log in to continue</string>
     <string name="mobile_number">Mobile Number</string>
     <string name="i_agree_to_the_following">I agree to the following</string>
-    <string name="privacy_policy_term_and_conditions">Privacy Policy, Term And Conditions</string>
-    <string name="skip">skip</string>
+    <string name="privacy_policy"><u>Privacy Policy,</u></string>
+    <string name="terms"><u>Terms and Conditions</u></string>
+    <string name="skip">SKIP</string>
     <string name="enter_4_digit_number">Enter 4 Digit Number</string>
     <string name="confirm_4_digit_pin">Confirm 4 Digit Pin</string>
-    <string name="set_pin">Set Pin</string>
+    <string name="set_pin">Set PIN</string>
     <string name="bean_blend_code">Bean Blend Code!</string>
     <string name="design_a_extra">Design a quick 4-digit PIN for a \ndelightful entry into our coffeehouse</string>
+    <string name="welcome_to_dashboard">WelCome</string>
+    <string name="PinNotMatched">Pin does not match. Try again.</string>
+    <string name="FillField">Please fill all fields</string>
+    <string name="incorrect">Incorrect Pin</string>
+    <string name="checkBox">Please accept the terms and conditions</string>
+    <string name="Invalid_Number">Invalid Mobile Number Format</string>
+    <string name="No_Same">Mobile Number cannot have all identical digits</string>
+    <string name="Valid_No">Valid Mobile Number</string>
+    <string name="verify_mobile_number">Verify Mobile Number</string>
+    <string name="otp_was_sent_to">OTP was sent to : </string>
+    <string name="otpSent">Hi! We have sent you a one-time password at</string>
+    <string name="enterPinBelow"> Please enter the password below</string>
+    <string name="passwordTakeTime">Your password may take a few moments to arrive.</string>
+
 
 </resources>

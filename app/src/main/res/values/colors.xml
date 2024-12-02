@@ -2,4 +2,14 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="welcome">#323232</color>
+    <color name="plzLogIn">#4C2A14</color>
+    <color name="agreeToContinue">#323232</color>
+    <color name="beanCoffe">#FF4C2914</color>
+    <color name="otpSent">#4C2914</color>
+    <color name="takeTime">#414141</color>
+    <color name="sentTo">#8d8d8d</color>
+    <color name="red">#F10505</color>
+    <color name="view">#c4c4c4</color>
+    <color name="designAQuick">#4c2914</color>
 </resources>
